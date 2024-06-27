@@ -1,52 +1,3 @@
-// To Create a Toggling Slider for Analgoue and Digital Clock
-
-let analogBtn = document.getElementById("analogue-btn");
-let digitalBtn = document.getElementById("digital-btn");
-let slider = document.querySelector(".slider");
-let clockBlock = document.querySelector(".clock-block");
-
-analogBtn.addEventListener("click", () => {
-    slider.classList.remove("moveslider");
-    clockBlock.classList.remove("clock-block-move");
-});
-
-digitalBtn.addEventListener("click", () => {
-    slider.classList.add("moveslider");
-    clockBlock.classList.add("clock-block-move");
-});
-
-// To Render Time for Digital Clock
-
-function getAnalogueTime() {}
-
-getAnalogueTime();
-
-// To Render Date for Digital Clock
-
-function getAnalogueDate() {
-    let date_time = new Date();
-    let date = date_time.getDate();
-    let month = date_time.toLocaleString("default", { month: "long" });
-    let year = date_time.getFullYear();
-    document.querySelector("#analogue .date-dd").textContent = date;
-    document.querySelector("#analogue .date-mm").textContent = month;
-    document.querySelector("#analogue .date-yy").textContent = year;
-
-    setInterval(getAnalogueDate, 1000 * 60 * 60 * 24);
-}
-
-getAnalogueDate();
-
-// To Render Day for Digital Clock
-
-function getAnalogueDay() {
-    let date_time = new Date();
-    let day = date_time.toLocaleString("default", { weekday: "long" });
-    document.querySelector("#analogue .days").textContent = day;
-}
-
-getAnalogueDay();
-
 // To Render Time for Digital Clock
 
 function getDigitalTime() {
@@ -58,7 +9,7 @@ function getDigitalTime() {
 
     if (hrs == 0) hrs = 12;
     if (hrs > 12) {
-        hrs = hrs - 12;
+        hrs -= 12;
         period = "PM";
     }
 
