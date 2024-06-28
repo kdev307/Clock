@@ -47,7 +47,7 @@ getDigitalDate();
 function getDigitalDay() {
     let date_time = new Date();
     let day = date_time.toLocaleString("default", { weekday: "long" });
-    document.querySelector("#digital .days").textContent = day;
+    document.querySelector("#digital .day-digital").textContent = day;
 }
 
 getDigitalDay();

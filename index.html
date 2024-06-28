@@ -3,13 +3,20 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
             href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
             rel="stylesheet"
         />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="stylesheets/style.css" />
+        <link rel="stylesheet" href="stylesheets/analogue.css" />
+        <link rel="stylesheet" href="stylesheets/digital.css" />
+
         <title>ClockD</title>
     </head>
     <body>
@@ -75,7 +82,9 @@
                                         <div class="period-analogue"></div>
                                         <div class="date-analogue">
                                             <div class="date-dd"></div>
+                                            <div>/</div>
                                             <div class="date-mm"></div>
+                                            <div>/</div>
                                             <div class="date-yy"></div>
                                         </div>
                                         <div class="day-analogue"></div>
@@ -88,11 +97,13 @@
                         <!-- DIGITAL CLOCK -->
                         <div class="dig-clock-box">
                             <div class="time-info">
+                                <div class="time-period"></div>
                                 <div class="time">
                                     <div class="time-hh"></div>
+                                    <div class="sep">:</div>
                                     <div class="time-mm"></div>
+                                    <div class="sep">:</div>
                                     <div class="time-ss"></div>
-                                    <div class="time-period"></div>
                                 </div>
                                 <div class="info">
                                     <div class="info-child">Hours</div>
@@ -103,7 +114,9 @@
                             <div class="date-info">
                                 <div class="date-digital">
                                     <div class="date-dd"></div>
+                                    <div class="sep">/</div>
                                     <div class="date-mm"></div>
+                                    <div class="sep">/</div>
                                     <div class="date-yy"></div>
                                 </div>
                                 <div class="info">
