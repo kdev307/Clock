@@ -211,7 +211,7 @@ main {
     text-align: center;
 }
 
-.period {
+.period-analogue {
     /* font-size: 1.6rem; */
     color: #c0c0c0;
     position: relative;
@@ -219,43 +219,28 @@ main {
     font-size: 1.6rem;
 }
 
-.numbers > .date {
+.date-analogue {
     gap: 1rem;
+    display: flex;
     color: #fff;
     position: relative;
     font-size: 2rem;
     top: 60%;
-}
-
-.numbers > .days {
-    color: #000;
-    position: relative;
-    /* top: 10%; */
-    font-size: 1.8rem;
-}
-
-.days {
-    background-color: #fff;
-    color: #000;
-    border-radius: 2rem;
-    padding: 0.4rem;
-    position: relative;
-    top: 0;
-    left: 38%;
-    width: fit-content;
-    text-align: center;
-}
-
-/* Common Text Stylings */
-
-.date,
-.time {
-    display: flex;
-    gap: 10rem;
     align-items: center;
     justify-content: center;
     margin: 2.4rem;
 }
+
+.day-analogue {
+    color: #fff;
+    position: relative;
+    font-size: 1.8rem;
+    padding: 0.4rem;
+    text-align: center;
+    z-index: 100;
+}
+
+/* Common Text Stylings */
 
 .info {
     display: flex;
@@ -265,9 +250,14 @@ main {
     gap: 7rem;
 }
 
-/* .day-info {
-    display: none;
-} */
+.date,
+.time {
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    margin: 2.4rem;
+}
 
 footer {
     background-color: #000;

@@ -17,7 +17,7 @@ function setSeconds() {
     let secs = now.getSeconds();
     let mins = now.getMinutes();
     let hrs = now.getHours();
-    let periodEle = document.querySelector(".period");
+    let periodEle = document.querySelector(".period-analogue");
     periodEle.textContent = "AM";
     if (hrs > 12) {
         hrs -= 12;
@@ -61,7 +61,7 @@ getAnalogueDate();
 function getAnalogueDay() {
     let date_time = new Date();
     let day = date_time.toLocaleString("default", { weekday: "long" });
-    document.querySelector("#analogue .days").textContent = day;
+    document.querySelector("#analogue .day-analogue").textContent = day;
 }
 
 getAnalogueDay();
